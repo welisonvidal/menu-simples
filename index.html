@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>menh</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1 class="logo">Delicious</h1>
+    <img class="menuimg" src="menu.png" alt="" onclick="clickMenu()">
+  </header>
+  <menu id="items" class="menu">
+    <ul>
+      <li><a class="items-list" href="#">Home</a></li>
+      <li><a class="items-list" href="#">About</a></li>
+      <li><a class="items-list" href="#">Package</a></li>
+      <li><a class="items-list" href="#">Gallery</a></li>
+      <li><a class="items-list" href="#">Contact</a></li>
+    </ul>
+  </menu>
+  <section class="conteudo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus magni architecto animi neque assumenda eligendi distinctio quisquam laboriosam dignissimos rem corporis, quos numquam ad voluptatum aspernatur, officia mollitia quod consequuntur.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, dolores, deserunt provident amet mollitia assumenda explicabo id exercitationem reiciendis temporibus numquam, magnam, sit facilis. Ad itaque beatae illo! Totam, aut.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consectetur accusantium, reiciendis quidem itaque delectus reprehenderit impedit tenetur doloribus odio, quia praesentium et! Earum laboriosam officiis voluptate laudantium aperiam ipsam!</p>
+
+  </section>
+  <script>
+    function clickMenu() {
+      if (items.style.display == 'block'){
+        items.style.display = 'none'
+      }else {
+        items.style.display = 'block'
+      }
+    }
+  </script>
+</body>
+
+</html>

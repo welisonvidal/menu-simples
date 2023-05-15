@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family= Lobster +Two:wght@400;700 & display=swap');
 
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
-html{
-  
+html {
+
   background-color: #d0d3d5;
 }
 
-.cabecalho{
+.cabecalho {
   display: flex;
   text-align: center;
   align-items: center;
@@ -18,38 +18,66 @@ html{
   background-color: #240112;
   padding: 12px 40px 12px 50px;
 }
-.logo{
+
+.logo {
   color: #da1753;
   font-size: 70px;
   font-family: 'Lobster Two', cursive;
   font-weight: 700;
 }
 
-.menuimg{
+.menuimg {
   width: 40px
 }
 
-.menu{
-  display:none;
+.menu {
+  display: none;
 }
-.menu ul{
-  display:flex;
+
+.menu ul {
+  display: flex;
   background-color: #363636;
   padding: 20px;
   text-align: center;
   justify-content: center;
 }
-.menu ul li{
+
+@media screen and (max-width: 600px) {
+
+  .menuimg {
+    width: 20px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .list {
+    font-size: 9px;
+  }
+
+  .menu ul {
+    padding: 8px 2px;
+  }
+
+  .menu ul li {
+    padding: 0px;
+  }
+
+}
+
+.menu ul li {
   list-style: none;
-  margin: 0px 30px;
+  margin: 0px 22px;
   text-transform: uppercase;
 }
-.menu ul li a{
+
+.menu ul li a {
   text-decoration: none;
   color: white
 }
 
-.conteudo{
+.conteudo {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -59,9 +87,10 @@ html{
   padding: 30px 20px;
   margin-top: 30px;
   text-indent: 30px;
-  
+
 }
-.conteudo p{
+
+.conteudo p {
   text-align: justify;
   margin-bottom: 20px;
 }
